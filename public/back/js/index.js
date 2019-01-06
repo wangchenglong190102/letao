@@ -4,7 +4,7 @@ $(function () {
     var myChart = echarts.init(document.querySelector(".echarts_left"));
 
     // 指定图表的配置项和数据
-    var option = {
+    var option1 = {
         title: {
             text: '2019年注册人数'
         },
@@ -28,7 +28,7 @@ $(function () {
     };
 
     // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
+    myChart.setOption(option1);
 
 
 
@@ -39,7 +39,7 @@ $(function () {
     var myChart = echarts.init(document.querySelector(".echarts_right"));
 
     // 指定图表的配置项和数据
-    var option = {
+    var option2 = {
         title: {
             text: '热门品牌销售',
             subtext: '2019年1月',
@@ -79,5 +79,5 @@ $(function () {
     };
 
     // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
+    myChart.setOption(option2);
 })

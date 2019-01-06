@@ -84,7 +84,7 @@ ul {
     display: block;
     color: #fff;
     padding-left: 40px;
-    border: 3px solid transparent;
+    border-left: 3px solid transparent;
     height: 40px;
     line-height: 40px;
 }
@@ -137,4 +137,9 @@ ul {
 .echarts_right {
   height: 400px;
   width: 48%;
+}
+.table-bordered.table-hover th,
+.table-bordered.table-hover td {
+    text-align: center;
+    vertical-align: middle;
 }
