@@ -23,9 +23,9 @@ $(function () {
            success: function (info) {
                console.log(info);
 
-               var htmlstr = template("tpl", info);
+               var htmlStr = template("tpl", info);
 
-               $('tbody').html(htmlstr);
+               $('tbody').html(htmlStr);
 
                 // 分页初始化
                $("#pagintor").bootstrapPaginator({
