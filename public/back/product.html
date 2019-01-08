@@ -117,8 +117,9 @@
                                     <!-- 留个坑 -->
                                 </ul>
                             </div>
+                            
                             <!-- 隐藏域 -->
-                            <input type="hidden" name="categoryId">
+                            <input type="hidden" name="brandId">
                         </div>
                         <div class="form-group">
                             <input type="text" name="proName" class="form-control" placeholder="请输入商品名称">
@@ -206,7 +207,13 @@
         {{/each}}
     </script>
 
-   
+   <script type="text/html" id="dropdownTpl">
+        {{each rows v i}}
+
+        <li><a data-id="{{v.id}}" href="#">{{v.brandName}}</a></li>
+
+        {{/each}}
+   </script>
 
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>

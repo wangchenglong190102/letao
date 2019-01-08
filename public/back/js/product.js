@@ -46,5 +46,27 @@ $(function () {
 
     $("#addBtn").click(function () {
         $("#addModal").modal("show");
+
+        //发生ajax请求,获取二级分类的全部数据,进行下拉菜单的渲染
+
+        $.ajax({
+            type:'get',
+            url:'/category/querySecondCategoryPaging',
+            data:{
+                page:1,
+                pageSize:100
+            },
+            dataType:'json',
+            success:function (info) {
+                console.log( info );
+                var htmlStr = template("dropdownTpl",info);
+                $(".dropdown-menu").html(htmlStr);
+            }
+        })
     })
+
+    //3.给下拉菜单的所有a,添加点击事件(事件委托
+    //1.获取文本,设置给按钮
+    //2.获取id,设置给隐藏域,用于提交
+    $(".dropdown-menu").on
 })
