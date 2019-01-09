@@ -107,9 +107,9 @@
                     <!-- 中间 -->
                     <div class="modal-body">
                         <div class="form-group">
+
                             <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                                    data-toggle="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                     <span id="dropdownText">请选择二级分类</span>
                                     <span class="caret"></span>
                                 </button>
@@ -121,11 +121,12 @@
                             <!-- 隐藏域 -->
                             <input type="hidden" name="brandId">
                         </div>
+                        
                         <div class="form-group">
                             <input type="text" name="proName" class="form-control" placeholder="请输入商品名称">
                         </div>
                         <div class="form-group">
-                            <textarea name="proDesc" class="form-control" placeholder="请输入商品描述" id="" cols="30" rows="4"></textarea>
+                            <textarea name="proDesc" class="form-control" placeholder="请输入商品描述" cols="30" rows="4"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="text" name="num" class="form-control" placeholder="请输入商品库存">
@@ -142,14 +143,13 @@
                         <div class="form-group">
                             <label class="btn btn-default" for="fileupload">上传图片</label>
 
-                            <input type="file" name="pic1" data-url="/category/addSecondCategoryPic" id="fileupload"
-                                style="display: none">
+                            <input type="file" multiple name="pic1" data-url="/product/addProductPic" id="fileupload" style="display: none">
 
                         </div>
                         <div class="form-group" id="imgBox">
-                            <img style="height:100px;" src="./images/none.png" alt="">
+                            <!-- <img style="height:100px;" src="./images/none.png" alt=""> -->
                             <!-- 隐藏域 -->
-                            <input type="hidden" name="brandLogo">
+                            <input type="hidden" name="picStatus">
                         </div>
                     </div>
                     <!-- 底部 -->
